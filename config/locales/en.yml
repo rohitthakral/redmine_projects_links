@@ -1,0 +1,12 @@
+en:
+  label_project_links: "Project Links"
+  field_title: "Title"
+  field_url: "Wiki Page URL"
+  notice_link_created: "Link created successfully."
+  notice_link_updated: "Link updated successfully."
+  notice_link_deleted: "Link deleted."
+  label_new_link: "New Link"
+  label_edit_link: "Edit Link"
+  label_submit: "Save"
+  label_created_by: "by"
+  confirm_delete: "Are you sure you want to delete this link?"

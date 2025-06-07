@@ -1,0 +1,23 @@
+<%= form_with(model: [@project, @project_link], local: true) do |f| %>
+  <% if @project_link.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project_link.errors.count, "error") %> prohibited this link from being saved:</h2>
+      <ul>
+        <% @project_link.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+    <%= f.label :title, l(:field_title) %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :url, l(:field_url) %><br>
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit l(:label_submit) %>
+  </p>
+<% end %>
