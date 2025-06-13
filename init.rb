@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift "#{File.dirname(__FILE__)}/lib/"
+require 'project_links/project_patch'
 Redmine::Plugin.register :redmine_project_links do
   name 'Project Links'
   author 'Target Integration'
